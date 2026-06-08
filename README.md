@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED)
-![MLOps](https://img.shields.io/badge/MLOps-Batch%20Pipeline-success)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 
 A production-oriented MLOps batch pipeline that processes OHLCV market data, computes rolling averages, generates trading signals, records operational metrics, and maintains complete execution observability through structured logging.
@@ -42,6 +41,26 @@ Signal = 0  otherwise
 
 ---
 
+## 📈 Sample Results
+
+- Rows Processed: 9996
+- Signal Rate: 0.4991
+- Status: Success
+- Latency: 45 ms
+
+----
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- Docker
+- YAML
+- Logging
+- MLOps Principles
+
+---
+
 # ✨ Key Features
 
 ### Data Processing
@@ -73,35 +92,29 @@ Signal = 0  otherwise
 * Clean project structure
 
 ---
+## 🏗️ Architecture
 
-# 🏗️ System Architecture
+```mermaid
+flowchart TD
 
-```text
-                    +----------------+
-                    |    data.csv    |
-                    +----------------+
-                             |
-                             v
-                 +----------------------+
-                 | Data Validation Layer |
-                 +----------------------+
-                             |
-                             v
-                 +----------------------+
-                 | Rolling Mean Engine  |
-                 +----------------------+
-                             |
-                             v
-                 +----------------------+
-                 | Signal Generator     |
-                 +----------------------+
-                             |
-          +------------------+------------------+
-          |                                     |
-          v                                     v
- +--------------------+             +--------------------+
- |    metrics.json    |             |      run.log       |
- +--------------------+             +--------------------+
+A[Input data.csv] --> B[Data Loader]
+B --> C[config.yaml]
+
+C --> D[Rolling Mean Calculation]
+D --> E[Signal Generation]
+
+E --> F[Metrics Computation]
+
+F --> G[metrics.json]
+F --> H[run.log]
+
+G --> I[Console Output]
+H --> I
+
+B --> J[Docker Execution]
+C --> J
+F --> J
+
 ```
 
 ---
@@ -151,8 +164,8 @@ mlops-task-0/
 This structure follows a modular and production-oriented design, separating configuration, execution, logging, data ingestion, and deployment assets for better maintainability and scalability.
 
 ```
-```
-
+pip install -r requirements.txt
+python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
 ```
 
 ---

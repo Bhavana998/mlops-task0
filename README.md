@@ -511,7 +511,7 @@ While the business logic is intentionally simple, the architecture reflects how 
 
 **Bhavana Setty**
 
-Aspiring AI/ML & MLOps Engineer
+Aspiring AI/ML Engineer
 
 GitHub: https://github.com/Bhavana998
 

@@ -28,7 +28,9 @@ Signal Logic:
 Signal = 1  if close > rolling_mean
 Signal = 0  otherwise
 ```
+## 🎬 Demo
 
+![Demo](assets/demo.gif)
 ---
 
 # ✨ Key Features

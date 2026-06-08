@@ -1,0 +1,34 @@
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Editors
+.vscode
+.idea
+*.swp
+*.swo
+
+# Docker artifacts
+*.tar
+*.tar.gz
+
+# Logs and output files (don't copy them into the image)
+*.log
+metrics.json
+run.log
+
+# Virtual environments
+env
+venv
+.venv
+
+# Testing
+.pytest_cache
+.coverage

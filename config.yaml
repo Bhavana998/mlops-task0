@@ -1,0 +1,4 @@
+# MLOps task configuration
+seed: 42
+window: 5
+version: "v1"

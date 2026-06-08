@@ -1,0 +1,43 @@
+def load_data(csv_path: Path) -> pd.DataFrame:
+    """Load CSV where every line (header and data) is enclosed in double quotes."""
+    if not csv_path.exists():
+        raise FileNotFoundError(f"Data file not found: {csv_path}")
+    if csv_path.stat().st_size == 0:
+        raise ValueError("Data file is empty")
+
+    # Read the header line and extract column names
+    with open(csv_path, "r") as f:
+        header_line = f.readline().strip()
+        # Remove outer quotes if present
+        if header_line.startswith('"') and header_line.endswith('"'):
+            header_line = header_line[1:-1]
+        column_names = header_line.split(",")
+
+    # Read data rows, strip quotes, split by comma
+    data_rows = []
+    with open(csv_path, "r") as f:
+        next(f)  # skip header line
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            # Remove outer quotes
+            if line.startswith('"') and line.endswith('"'):
+                line = line[1:-1]
+            row = line.split(",")
+            data_rows.append(row)
+
+    # Create DataFrame and convert numeric columns
+    df = pd.DataFrame(data_rows, columns=column_names)
+    numeric_cols = ["open", "high", "low", "close", "volume_btc", "volume_usd"]
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # Validate close column
+    if "close" not in df.columns:
+        raise ValueError("Column 'close' not found in CSV")
+    if df["close"].isna().all():
+        raise ValueError("No valid numeric values in 'close' column")
+
+    return df

@@ -87,3 +87,155 @@
 }
 2026-06-08 21:07:06,602 - INFO - Writing metrics to metrics.json
 2026-06-08 21:07:06,603 - INFO - === Job ended with status: success ===
+2026-06-08 22:03:21,994 - INFO - === Job started ===
+2026-06-08 22:03:21,994 - INFO - Loading config from config.yaml
+2026-06-08 22:03:21,996 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 22:03:21,996 - INFO - Loading data from data.csv
+2026-06-08 22:03:22,041 - INFO - Loaded 10000 rows
+2026-06-08 22:03:22,041 - INFO - Computing rolling mean with window=5
+2026-06-08 22:03:22,044 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-08 22:03:22,045 - INFO - Signal rate: 0.4991
+2026-06-08 22:03:22,045 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 51,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-08 22:03:22,045 - INFO - Writing metrics to metrics.json
+2026-06-08 22:03:22,046 - INFO - === Job ended with status: success ===
+2026-06-08 22:07:01,377 - INFO - === Job started ===
+2026-06-08 22:07:01,377 - INFO - Loading config from config.yaml
+2026-06-08 22:07:01,378 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 22:07:01,378 - INFO - Loading data from data.csv
+2026-06-08 22:07:01,409 - INFO - Loaded 10000 rows
+2026-06-08 22:07:01,409 - INFO - Computing rolling mean with window=5
+2026-06-08 22:07:01,411 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-08 22:07:01,411 - INFO - Signal rate: 0.4991
+2026-06-08 22:07:01,411 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 34,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-08 22:07:01,411 - INFO - Writing metrics to metrics.json
+2026-06-08 22:07:01,412 - INFO - === Job ended with status: success ===
+2026-06-08 22:48:01,793 - INFO - === Job started ===
+2026-06-08 22:48:01,793 - INFO - Loading config from config.yaml
+2026-06-08 22:48:01,811 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 22:48:01,812 - INFO - Loading data from data.csv
+2026-06-08 22:48:01,856 - INFO - Loaded 10000 rows
+2026-06-08 22:48:01,857 - INFO - Computing rolling mean with window=5
+2026-06-08 22:48:01,859 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-08 22:48:01,859 - INFO - Signal rate: 0.4991
+2026-06-08 22:48:01,859 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 67,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-08 22:48:01,859 - INFO - Writing metrics to metrics.json
+2026-06-08 22:48:01,861 - INFO - === Job ended with status: success ===
+2026-06-08 22:58:02,213 - INFO - === Job started ===
+2026-06-08 22:58:02,213 - INFO - Loading config from config.yaml
+2026-06-08 22:58:02,215 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 22:58:02,217 - INFO - Loading data from data.csv
+2026-06-08 22:58:02,264 - INFO - Loaded 10000 rows
+2026-06-08 22:58:02,264 - INFO - Computing rolling mean with window=5
+2026-06-08 22:58:02,273 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-08 22:58:02,273 - INFO - Signal rate: 0.4991
+2026-06-08 22:58:02,273 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 61,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-08 22:58:02,273 - INFO - Writing metrics to metrics.json
+2026-06-08 22:58:02,274 - INFO - === Job ended with status: success ===
+2026-06-08 23:10:49,140 - INFO - === Job started ===
+2026-06-08 23:10:49,140 - INFO - Loading config from config.yaml
+2026-06-08 23:10:49,158 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-08 23:10:49,158 - INFO - Loading data from data.csv
+2026-06-08 23:10:49,211 - INFO - Loaded 10000 rows
+2026-06-08 23:10:49,211 - INFO - Computing rolling mean with window=5
+2026-06-08 23:10:49,215 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-08 23:10:49,215 - INFO - Signal rate: 0.4991
+2026-06-08 23:10:49,215 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 75,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-08 23:10:49,215 - INFO - Writing metrics to metrics.json
+2026-06-08 23:10:49,216 - INFO - === Job ended with status: success ===
+2026-06-09 00:12:03,611 - INFO - === Job started ===
+2026-06-09 00:12:03,611 - INFO - Loading config from config.yaml
+2026-06-09 00:12:03,612 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-09 00:12:03,612 - INFO - Loading data from data.csv
+2026-06-09 00:12:03,661 - INFO - Loaded 10000 rows
+2026-06-09 00:12:03,662 - INFO - Computing rolling mean with window=5
+2026-06-09 00:12:03,666 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-09 00:12:03,666 - INFO - Signal rate: 0.4991
+2026-06-09 00:12:03,666 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 56,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-09 00:12:03,666 - INFO - Writing metrics to metrics.json
+2026-06-09 00:12:03,667 - INFO - === Job ended with status: success ===
+2026-06-09 00:35:28,838 - INFO - === Job started ===
+2026-06-09 00:35:28,839 - INFO - Loading config from config.yaml
+2026-06-09 00:35:28,839 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-09 00:35:28,839 - INFO - Loading data from data.csv
+2026-06-09 00:35:28,866 - INFO - Loaded 10000 rows
+2026-06-09 00:35:28,866 - INFO - Computing rolling mean with window=5
+2026-06-09 00:35:28,868 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-09 00:35:28,868 - INFO - Signal rate: 0.4991
+2026-06-09 00:35:28,869 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 31,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-09 00:35:28,869 - INFO - Writing metrics to metrics.json
+2026-06-09 00:35:28,870 - INFO - === Job ended with status: success ===
+2026-06-09 00:36:14,677 - INFO - === Job started ===
+2026-06-09 00:36:14,677 - INFO - Loading config from config.yaml
+2026-06-09 00:36:14,678 - INFO - Config loaded: seed=42, window=5, version=v1
+2026-06-09 00:36:14,679 - INFO - Loading data from data.csv
+2026-06-09 00:36:14,710 - INFO - Loaded 10000 rows
+2026-06-09 00:36:14,711 - INFO - Computing rolling mean with window=5
+2026-06-09 00:36:14,712 - INFO - Processed 9996 valid rows (first 4 rows excluded)
+2026-06-09 00:36:14,713 - INFO - Signal rate: 0.4991
+2026-06-09 00:36:14,714 - INFO - Metrics: {
+  "version": "v1",
+  "rows_processed": 9996,
+  "metric": "signal_rate",
+  "value": 0.4991,
+  "latency_ms": 36,
+  "seed": 42,
+  "status": "success"
+}
+2026-06-09 00:36:14,714 - INFO - Writing metrics to metrics.json
+2026-06-09 00:36:14,716 - INFO - === Job ended with status: success ===

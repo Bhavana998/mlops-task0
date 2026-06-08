@@ -2,7 +2,11 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED)
+![CI](https://github.com/Bhavana998/mlops-task0/actions/workflows/ci.yml/badge.svg)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+![MLOps](https://img.shields.io/badge/MLOps-Batch%20Pipeline-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
 A production-oriented MLOps batch pipeline that processes OHLCV market data, computes rolling averages, generates trading signals, records operational metrics, and maintains complete execution observability through structured logging.
 

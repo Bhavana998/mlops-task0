@@ -167,11 +167,6 @@ mlops-task-0/
 
 This structure follows a modular and production-oriented design, separating configuration, execution, logging, data ingestion, and deployment assets for better maintainability and scalability.
 
-```
-pip install -r requirements.txt
-python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
-```
-
 ---
 
 # 📂 Input Dataset
@@ -229,6 +224,9 @@ python run.py \
   --config config.yaml \
   --output metrics.json \
   --log-file run.log
+```
+```bash
+python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
 ```
 
 ---

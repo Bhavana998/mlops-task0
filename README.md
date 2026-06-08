@@ -31,6 +31,15 @@ Signal = 0  otherwise
 ## 🎬 Demo
 
 ![Demo](assets/demo.gif)
+
+## 🔍 Observability & Monitoring
+
+### 📊 Generated Metrics
+![Metrics](assets/metrics_output.png)
+
+### 📜 Execution Logs
+![Logs](assets/log_output.png)
+
 ---
 
 # ✨ Key Features
